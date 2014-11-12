@@ -5,7 +5,7 @@
   "author": "womp",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p .build/en-US; spundle -c US -l en > .build/en-US/_languagepack.json; browserify -r ./.build/en-US/_languagepack.json:_languagepack > .build/en-US/_languagepack.js; browserify -t reactify -x _languagepack public/js/app.jsx > .build/main.js",
+    "build": "grunt build",
     "test": "grunt test",
     "start": "node index.js"
   },
@@ -16,6 +16,8 @@
     "dustjs-linkedin": "^2.4.0",
     "express": "^4.3.0",
     "express-bcp47": "^2.0.0",
+    "grunt-browserify": "^3.2.1",
+    "grunt-makara-browserify": "^1.0.0",
     "intl": "^0.1.4",
     "kraken-devtools": "^1.0.0",
     "kraken-js": "^1.0.1",
