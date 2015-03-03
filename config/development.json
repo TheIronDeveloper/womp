@@ -12,7 +12,15 @@
             "renderer": {
                 "method": "dust",
                 "arguments": [
-                    { "cache": false },
+                    {
+                        "cache": false,
+                        "helpers": [
+                            {
+                                "name": "dust-makara-helpers",
+                                "arguments": { "localeRoot": "path:locales" }
+                            }
+                        ]
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",

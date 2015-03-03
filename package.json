@@ -9,7 +9,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "adaro": "^0.1.5",
+    "adaro": "^0.1.7",
+    "dust-makara-helpers": "^2.0.0",
     "dustjs-helpers": "^1.2.0",
     "dustjs-linkedin": "^2.4.0",
     "engine-munger": "^0.2.0",

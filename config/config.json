@@ -11,7 +11,15 @@
             "renderer": {
                 "method": "js",
                 "arguments": [
-                    { "cache": true },
+                    {
+                        "cache": true,
+                        "helpers": [
+                            {
+                                "name": "dust-makara-helpers",
+                                "arguments": { "localeRoot": "path:locales" }
+                            }
+                        ]
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",
@@ -25,7 +33,15 @@
             "renderer": {
                 "method": "js",
                 "arguments": [
-                    { "cache": true },
+                    {
+                        "cache": true,
+                        "helpers": [
+                            {
+                                "name": "dust-makara-helpers",
+                                "arguments": { "localeRoot": "path:locales" }
+                            }
+                        ]
+                    },
                     {
                         "views": "config:express.views",
                         "view engine": "config:express.view engine",
