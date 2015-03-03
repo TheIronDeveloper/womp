@@ -2,4 +2,10 @@
 
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
+
+    <div id='hereyougo'>
+    </div>
 {/body}
+
+<script src='/en-US/_languagepack.js'></script>
+<script src=/main.js></script>
